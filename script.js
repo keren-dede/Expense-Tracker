@@ -39,9 +39,9 @@ function updateValues() {
     .filter(t => t.type === 'expense')
     .reduce((sum, t) => sum + t.amount, 0);
 
-  balance.textContent = ${(income - expense).toFixed(2)};
-  incomeEl.textContent = ${income.toFixed(2)};
-  expenseEl.textContent = ${expense.toFixed(2)};
+  balance.textContent = `₵${(income - expense).toFixed(2)}`;
+  incomeEl.textContent = `₵${income.toFixed(2)}`;
+  expenseEl.textContent = `₵${expense.toFixed(2)}`;
 }
 
 function addToDOM(t) {
